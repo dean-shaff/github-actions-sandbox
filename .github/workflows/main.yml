@@ -7,9 +7,6 @@ jobs:
   render:
     name: Render README.md
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-versions: [3.6]
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python 3.x
