@@ -14,8 +14,8 @@ jobs:
         with:
           python-version: '3.x'
       - name: Render README.md
-        run: python render.py
-      - name: commit rendered README
+        run: python main.py -h | python render_README.py
+      - name: commit rendered README.md
         run: |
           git config user.email ${{ secrets.GIT_EMAIL }}
           git config user.name ${{ secrets.GIT_NAME }}
