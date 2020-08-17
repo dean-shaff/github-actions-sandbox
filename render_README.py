@@ -12,7 +12,6 @@ def render(input_file_path, output_file_path, content):
         fd.write(new_content)
 
 
-
 def main():
     content = sys.stdin.read()
     render("README.template.md", "README.md", content)
