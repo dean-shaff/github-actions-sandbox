@@ -6,7 +6,7 @@ def render(input_file_path, output_file_path, content):
     with open(input_file_path, "r") as fd:
         new_content = fd.read()
 
-    new_content = new_content.format(gemscape_help_text=content)
+    new_content = new_content.format(help=content)
 
     with open(output_file_path, "w") as fd:
         fd.write(new_content)
