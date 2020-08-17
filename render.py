@@ -1,6 +1,6 @@
 
 def main():
-    with open("README.md.conf", "r") as fd:
+    with open("README.template.md", "r") as fd:
         contents = fd.read()
 
     contents = contents.format(help="Hello from Github Actions Sandbox!")
