@@ -1,5 +1,9 @@
 # Github Actions Sandbox
 
+## Usage
+
+```
+>> python main.py -h
 usage: main.py [-h] [-i INTS [INTS ...]] [-v]
 
 Sample Program with command line arguments
@@ -10,3 +14,4 @@ optional arguments:
                         Numbers to sum
   -v, --verbose         Verbose output
 
+```
